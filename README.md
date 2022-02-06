@@ -48,7 +48,7 @@ Since the pixel values might have varied due to different scanners, the data in 
 were normalized. This was done by dividing each value of an array by the maximum
 value of the array, which resulted in every value being in a range [0, 1].
 
-The Generator incorporated [ImageDataAugmentor](https://github.com/mjkvaak/ImageDataAugmentor) to apply augmentations (Vertical Flip, Random Rotate 90°, Shift Scale Rotate, Grid Disortion).
+The Generator incorporated [ImageDataAugmentor](https://github.com/mjkvaak/ImageDataAugmentor) to apply augmentations (Vertical Flip, Random Rotate 90°, Shift Scale Rotate, Grid Distortion).
 
 > It was crucial that the library modified the brain and corresponding mask the same way, in order to match annotations with damaged brain tissue.
 
@@ -123,4 +123,4 @@ compared to the first and second approach. One of them is batch normalization. A
 In terms of the time difference, none of the experiments showed significant differences
 in training time (approximately 3 hours) and prediction time (1 second for a patient).
 
-> The whole comparison, as well as graphs of training and pictures of predicitons can be seen in the [full thesis](https://dspace.vutbr.cz/handle/11012/196900?locale-attribute=en).
+> The whole comparison, as well as graphs of training and pictures of predictions can be seen in the [full thesis](https://dspace.vutbr.cz/handle/11012/196900?locale-attribute=en).
